@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+  @font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+
+/*# sourceURL=webpack://./node_modules/github-markdown-css/github-markdown.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9naXRodWItbWFya2Rvd24tY3NzL2dpdGh1Yi1tYXJrZG93bi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBMEI7RUFDMUIsMkRBQXF0RTtBQUN2dEU7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTs7Ozs7O0VBTUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQkFBa0I7QUFDcEI7O0FBRUE7Ozs7OztFQU1FLHFCQUFxQjtBQUN2Qjs7QUFFQTs7Ozs7O0VBTUUsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsMEJBQTBCO0VBQzFCLDhCQUE4QjtFQUM5QixjQUFjO0VBQ2QsZ0JBQWdCO0VBQ2hCLGtJQUFrSTtFQUNsSSxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCOztBQUVBOztFQUVFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTs7Ozs7OztFQU9FLGNBQWM7QUFDaEI7O0FBRUE7O0VBRUUsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsY0FBYztFQUNkLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7OztFQUdFLGNBQWM7RUFDZCxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFD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 */
+  </style>
+  <style>
+  /**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+/*# sourceURL=webpack://./node_modules/prismjs/themes/prism.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL25vZGVfbW9kdWxlcy9wcmlzbWpzL3RoZW1lcy9wcmlzbS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7RUFJRTs7QUFFRjs7Q0FFQyxZQUFZO0NBQ1osZ0JBQWdCO0NBQ2hCLHdCQUF3QjtDQUN4QixzRUFBc0U7Q0FDdEUsY0FBYztDQUNkLGdCQUFnQjtDQUNoQixnQkFBZ0I7Q0FDaEIsb0JBQW9CO0NBQ3BCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsZ0JBQWdCOztDQUVoQixnQkFBZ0I7Q0FDaEIsY0FBYztDQUNkLFdBQVc7O0NBRVgscUJBQXFCO0NBQ3JCLGtCQUFrQjtDQUNsQixpQkFBaUI7Q0FDakIsYUFBYTtBQUNkOztBQUVBOztDQUVDLGlCQUFpQjtDQUNqQixtQkFBbUI7QUFDcEI7O0FBRUE7O0NBRUMsaUJBQWlCO0NBQ2pCLG1CQUFtQjtBQUNwQjs7QUFFQTtDQUNDOztFQUVDLGlCQUFpQjtDQUNsQjtBQUNEOztBQUVBLGdCQUFnQjtBQUNoQjtDQUNDLFlBQVk7Q0FDWixjQUFjO0NBQ2QsY0FBYztBQUNmOztBQUVBOztDQUVDLG1CQUFtQjtBQUNwQjs7QUFFQSxnQkFBZ0I7QUFDaEI7Q0FDQyxhQUFhO0NBQ2IsbUJBQW1CO0NBQ25CLG1CQUFtQjtBQUNwQjs7QUFFQTs7OztDQUlDLGdCQUFnQjtBQUNqQjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTtDQUNDLFdBQVc7QUFDWjs7QUFFQTs7Ozs7OztDQU9DLFdBQVc7QUFDWjs7QUFFQTs7Ozs7O0NBTUMsV0FBVztBQUNaOztBQUVBOzs7OztDQUtDLGNBQWM7Q0FDZCxvRUFBb0U7Q0FDcEUsaUNBQWlDO0FBQ2xDOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsY0FBYztBQUNmOztBQUVBOzs7Q0FHQyxXQUFXO0FBQ1o7O0FBRUE7O0NBRUMsaUJBQWlCO0FBQ2xCO0FBQ0E7Q0FDQyxrQkFBa0I7QUFDbkI7O0FBRUE7Q0FDQyxZQUFZO0FBQ2IiLCJzb3VyY2VSb290IjoiIn0= */
+  </style>
+  <style>
+  
+  </style>
+  <style>
+    .markdown-body {
+      font-family: -apple-system,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+
+    @media not print {
+      .markdown-body {
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    }
+
+    .hf-container {
+      color: #24292e;
+      line-height: 1.3;
+    }
+
+    .markdown-body .highlight pre,
+    .markdown-body pre {
+      white-space: pre-wrap;
+    }
+    .markdown-body table {
+      display: table;
+    }
+    .markdown-body img[data-align="center"] {
+      display: block;
+      margin: 0 auto;
+    }
+    .markdown-body img[data-align="right"] {
+      display: block;
+      margin: 0 0 0 auto;
+    }
+    .markdown-body li.task-list-item {
+      list-style-type: none;
+    }
+    .markdown-body li > [type=checkbox] {
+      margin: 0 0 0 -1.3em;
+    }
+    .markdown-body input[type="checkbox"] ~ p {
+      margin-top: 0;
+      display: inline-block;
+    }
+    .markdown-body ol ol,
+    .markdown-body ul ol {
+      list-style-type: decimal;
+    }
+    .markdown-body ol ol ol,
+    .markdown-body ol ul ol,
+    .markdown-body ul ol ol,
+    .markdown-body ul ul ol {
+      list-style-type: decimal;
+    }
+  </style>
+  <style>.markdown-body a.footnote-ref {
+  text-decoration: none;
+}
+
+.footnotes {
+  font-size: .85em;
+  opacity: .8;
+}
+
+.footnotes li[role="doc-endnote"] {
+  position: relative;
+}
+
+.footnotes .footnote-back {
+  position: absolute;
+  font-family: initial;
+  top: .2em;
+  right: 1em;
+  text-decoration: none;
+}
+
+.inline-math.invalid,
+.multiple-math.invalid {
+  color: rgb(255, 105, 105);
+}
+
+.toc-container {
+  width: 100%;
+}
+
+.toc-container .toc-title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.toc-container li,
+.toc-container ul,
+.toc-container ul li {
+  list-style: none !important;
+}
+
+.toc-container > ul {
+  padding-left: 0;
+}
+
+.toc-container ul li span {
+  display : flex;
+}
+
+.toc-container ul li span a {
+  color: inherit;
+  text-decoration: none;
+}
+.toc-container ul li span a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+.toc-container ul li span span.dots {
+  flex: 1;
+  height: 0.65em;
+  margin: 0 10px;
+  border-bottom: 2px dotted black;
+}
+
+/*# sourceURL=webpack://./src/muya/lib/assets/styles/exportStyle.css */
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9tdXlhL2xpYi9hc3NldHMvc3R5bGVzL2V4cG9ydFN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFNBQVM7RUFDVCxVQUFVO0VBQ1YscUJBQXFCO0FBQ3ZCOztBQUVBOztFQUVFLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBOzs7RUFHRSwyQkFBMkI7QUFDN0I7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxPQUFPO0VBQ1AsY0FBYztFQUNkLGNBQWM7RUFDZCwrQkFBK0I7QUFDakMiLCJzb3VyY2VSb290IjoiIn0= */</style>
+  <style>.markdown-body{}pre.front-matter{display:none!important;}</style>
+</head>
+<body>
+  <article class="markdown-body"><h1 class="atx" id="delete-bloatware-and-install-apps-on-android-via-android-debug-bridge-adb">Delete Bloatware and Install Apps on Android via Android Debug Bridge (ADB)</h1>
+<p>Do you need the ADB shell to install apps on your phone when anyone can easily check the option to 'allow installation from unknown sources' and use the phone browser to download APK files? The short answer is, Yes.</p>
+<p>The Reason:</p>
+<p>Google accounts enrolled in Google's Advanced Protection Program have limited choices of app installation from different sources due to security reasons. On the other hand, some people prefer libre and open source applications for security. Open source projects are usually secure due to the nature of their publicly auditable source code. F-Droid is a repository that hosts such Android applications. Apps on F-Droid are compiled from the source code on their server, so those apps are secure. Here's the catch. Google won't allow users of Advanced Protection Program enrolled accounts to install any other app store on their devices. The phones of those users won't have any effect on having the button 'allow installation from unknown sources' checked either. Here comes another question. Will F-Droid be able to install apps on those phones even though F-Droid can be installed from the PC using the ADB shell? No. Possibly, F-Droid won't be allowed to update apps that are also available on both the app stores (Google Play Store). However, F-Droid is a treasure of information to know alternative open-source applications. Find an app on F-Droid, then search for it on Play Store. The ADB shell will be the last resort to get an app on the phone after downloading the app from F-Droid's repository, only if it's unavailable in Google Play Store.</p>
+<p>'I'm not impressed. My Google account is not enrolled in Advanced Protection Program. Do I really need the ADB shell anyway? ' Yes. In case you want to get rid of sticky bloatware supplied by the phone vendor. Those sticky apps are irremovable. The regular uninstallation method won't do the trick.</p>
+<p>Thus, knowing to use the ADB shell is a plus.</p>
+<p>What you need:</p>
+<ol>
+<li><p>A computer. It can be a Windows or a Linux computer.</p>
+</li>
+<li><p>An Android device (phone/tablet/Android-powered eReader etc.).</p>
+</li>
+<li><p>15 minutes of patience.</p>
+</li>
+</ol>
+<p>Ref:</p>
+<p>Google: how to sideload apps using the adb</p>
+<p><a href="https://www.lifewire.com/how-to-sideload-android-apps-4689188">https://www.lifewire.com/how-to-sideload-android-apps-4689188</a></p>
+<p>Google: uninstall apps from the adb shell</p>
+<p><a href="https://www.droidwin.com/remove-uninstall-bloatware-apps-from-android-via-adb-commands/">https://www.droidwin.com/remove-uninstall-bloatware-apps-from-android-via-adb-commands/</a></p>
+<blockquote>
+<p>Fun Factor: Turning on USB Debugging is not Jailbreaking. You aren't going to Root your phone. (^_^)</p>
+</blockquote>
+<p><strong>If you are looking for a tutorial to root your phone, you should look somewhere else.</strong></p>
+<p>I never suggest people to ROOT their phones. It's a clear threat to security.</p>
+<h2 class="atx" id="part-1">Part 1:</h2>
+<h4 class="atx" id="windows">Windows:</h4>
+<p>Download the ADB from Google:
+ <a href="https://dl.google.com/android/repository/platform-tools-latest-windows.zip">https://dl.google.com/android/repository/platform-tools-latest-windows.zip</a></p>
+<p>Unpack the zip archive with 7-Zip (*use only 7Z).</p>
+<h5 class="atx" id="registry-patch">Registry Patch:</h5>
+<p>You'll need a registry patch so that you can open the Windows command prompt inside a folder from a simple Right-Click context menu.</p>
+<p>Filename:</p>
+<pre><code class="fenced-code-block">TerminalHere.reg</code></pre>
+<pre><code class="fenced-code-block">Windows Registry Editor Version 5.00
+
+; Open CMD Here
+; 'Open Terminal Here' MS equivalent
+
+; https://github.com/microsoft/terminal/issues/1060
+; https://stackoverflow.com/questions/27632612/comment-in-reg-file
+; https://docs.microsoft.com/en-us/previous-versions/windows/embedded/gg469889(v=winembedded.80)?redirectedfrom=MSDN
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open CMD Here\command]
+@="C:\\Windows\\system32\\cmd.exe"</code></pre>
+<h4 class="atx" id="-ubuntu">*-Ubuntu:</h4>
+<pre><code class="fenced-code-block">sudo apt install android-tools-adb</code></pre>
+<p>The two core aspects of installing/uninstalling apps from the ADB shell:</p>
+<ol>
+<li>Developer Mode.</li>
+<li>USB Debugging.</li>
+</ol>
+<h2 class="atx" id="part-2">Part 2:</h2>
+<h4 class="atx" id="on-the-phone">On the phone:</h4>
+<p><strong>Settings App</strong> -&gt; <strong>About Phone</strong> -&gt; <strong>MIUI Version</strong> -&gt; <strong>Tap 7 Times</strong></p>
+<p>You'll get a warning that looks like, 'You're 4 steps away from putting your phone into developer mode', after three consecutive taps.</p>
+<blockquote>
+<p>You're 4 steps away from putting your phone into developer mode</p>
+</blockquote>
+<p>Ref: <a href="https://www.getdroidtips.com/enable-option-usb-debugging-redmi-4-4x/">https://www.getdroidtips.com/enable-option-usb-debugging-redmi-4-4x/</a></p>
+<p>Google: toggle developer mode redmi 4</p>
+<p><strong>NOTE:</strong> Connect your device to the internet. Otherwise, Xiaomi Corporation Inc. won't let you turn on USB Debugging.</p>
+<p><img alt="ADB-devel-0001" src="attachments/ADB-devel-0001.jpg"></p>
+<p>Turn on USB Debugging from the Developer Options.</p>
+<p><strong>Settings App</strong> -&gt; <strong>System Settings</strong> -&gt; <strong>Additional Settings</strong> -&gt; <strong>Developer Options</strong> -&gt; <strong>DEBUGGING</strong> -&gt; <strong>USB Debugging</strong>, <strong>Install via USB</strong>, &amp; <strong>Verify apps installed over the USB</strong>.</p>
+<p><img alt="ADB-devel-0002" src="attachments/ADB-devel-0002.jpg"></p>
+<p><img alt="ADB-devel-0003" src="attachments/ADB-devel-0003.jpg"></p>
+<p><img alt="ADB-devel-0004" src="attachments/ADB-devel-0004.jpg"></p>
+<p><img alt="ADB-devel-0005" src="attachments/ADB-devel-0005.jpg"></p>
+<p><img alt="ADB-devel-0006" src="attachments/ADB-devel-0006.jpg"></p>
+<h2 class="atx" id="part-3">Part 3:</h2>
+<p>PC Side:</p>
+<p>Right-click inside the extracted folder 'platform-tools_rxx.x.x-windows\platform-tools' and choose to open a command prompt window there.</p>
+<h4 class="atx" id="cmd">CMD:</h4>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;ls
+AdbWinApi.dll     adb.exe          fastboot.exe         make_f2fs.exe           mke2fs.exe         systrace
+AdbWinUsbApi.dll  dmtracedump.exe  hprof-conv.exe       make_f2fs_casefold.exe  source.properties
+NOTICE.txt        etc1tool.exe     libwinpthread-1.dll  mke2fs.conf             sqlite3.exe</code></pre>
+<p>The <code>ls</code> command worked on my PC because I have MSYS2 installed on my system. And also, MSYS2 'bin' directories are added to the system path on my system.</p>
+<pre><code class="fenced-code-block">C:\msys64\usr\bin
+C:\msys64\usr\x86_64-pc-msys\bin
+C:\msys64
+C:\msys64\mingw64\bin
+C:\msys64\opt\node-v14.17.6-win-x64</code></pre>
+<p>Not everyone needs MSYS2. So, for now, stick to the more common Windows command: <code>dir</code>.</p>
+<h2 class="atx" id="part-4">Part 4:</h2>
+<h4 class="atx" id="the-next-step">The Next Step</h4>
+<pre><code class="fenced-code-block">adb devices</code></pre>
+<p>Allow USB Debugging from the phone. Or else, you'll see that the connected device is unauthorised, and you won't be able to install/uninstall anything on your phone from your PC's terminal.
+See the outputs below:</p>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;adb devices
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+xxxyyywwwzzz    unauthorized</code></pre>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;adb install "C:\Users\YourUserName\Downloads\F-Droid.apk"
+Performing Streamed Install
+adb: failed to install F-Droid.apk: Failure [INSTALL_FAILED_USER_RESTRICTED: Install canceled by user]</code></pre>
+<p>After authorising USB Debugging from the phone, the output will look something like this:</p>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;adb devices
+List of devices attached
+xxxyyywwwzzz    device</code></pre>
+<h2 class="atx" id="part-5">Part 5:</h2>
+<blockquote>
+<p>NOTE: Don't ever install APK files downloaded from anywhere other than the F-Droid's repository. Any other third-party app stores are also not beyond scepticism. Even Google Play Store is a mixed bag. There is no shortage of malicious apps found on Google's own app store. Play Store comes preinstalled, so it is deemed secure by android users.</p>
+</blockquote>
+<h2 class="atx" id="app-installation">App Installation:</h2>
+<p>Now you can install any app from the terminal. <strong>Important:</strong> Be sure to authorise the installation from the PC to the phone on the phone side. You'll see that a dialogue box appears on your phone asking your permission to allow the connected PC to perform the installation.</p>
+<p>Examples:</p>
+<pre><code class="fenced-code-block">adb install Your_app.apk</code></pre>
+<pre><code class="fenced-code-block">adb install F-Droid.apk</code></pre>
+<pre><code class="fenced-code-block">adb install "C:\Users\YourUserName\Downloads\F-Droid.apk"</code></pre>
+<p>If everything goes well, you'll be greeted with the 'success' message.</p>
+<pre><code class="fenced-code-block">Performing Streamed Install...
+Success</code></pre>
+<p>Example:</p>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;adb install "C:\Users\YourUserName\Downloads\F-Droid.apk"
+Performing Streamed Install
+Success</code></pre>
+<h2 class="atx" id="part-6">Part 6:</h2>
+<h2 class="atx" id="app-uninstallation">App Uninstallation:</h2>
+<pre><code class="fenced-code-block">adb shell</code></pre>
+<p>Know the packages installed on your phone.</p>
+<pre><code class="fenced-code-block">pm list packages -s</code></pre>
+<p>Here's the output I received.</p>
+<p>Depending on the phone and the apps installed on your phone, you may see something else. I try new applications and sometimes uninstall apps I don't need. So, the list may grow or shrink in the future. That's not something to be considered permanent. However, the output below will give us an overview of what it looks like from the ADB Shell.</p>
+<pre><code class="fenced-code-block">package:com.miui.screenrecorder
+package:com.android.cts.priv.ctsshim
+package:com.google.android.youtube
+package:com.qualcomm.qti.auth.sampleextauthservice
+package:com.google.android.ext.services
+package:com.android.providers.telephony
+package:com.miui.powerkeeper
+package:com.xiaomi.miplay_client
+package:com.google.android.googlequicksearchbox
+package:com.miui.fm
+package:com.android.providers.calendar
+package:com.android.providers.media
+package:com.milink.service
+package:com.qti.service.colorservice
+package:com.google.android.onetimeinitializer
+package:com.google.android.ext.shared
+package:com.xiaomi.powerchecker
+package:com.xiaomi.account
+package:com.qualcomm.shutdownlistner
+package:com.android.wallpapercropper
+package:com.quicinc.cne.CNEService
+package:com.xiaomi.mi_connect_service
+package:com.xiaomi.micloud.sdk
+package:com.wt.secret_code_manager
+package:org.simalliance.openmobileapi.service
+package:com.android.updater
+package:com.android.documentsui
+package:com.android.externalstorage
+package:com.qualcomm.uimremoteclient
+package:com.android.htmlviewer
+package:com.qualcomm.svi
+package:com.miui.securityadd
+package:com.miui.gallery
+package:com.android.mms.service
+package:com.miui.msa.global
+package:com.android.providers.downloads
+package:com.qualcomm.qti.auth.sampleauthenticatorservice
+package:com.xiaomi.payment
+package:com.miui.securitycenter
+package:android.autoinstalls.config.Xiaomi.santoni
+package:com.qualcomm.qti.telephonyservice
+package:com.miui.videoplayer
+package:com.qualcomm.qti.auth.fidocryptoservice
+package:com.google.android.configupdater
+package:com.android.soundrecorder
+package:com.miui.userguide
+package:com.android.defcontainer
+package:com.miui.guardprovider
+package:com.android.providers.downloads.ui
+package:com.android.vending
+package:com.android.pacprocessor
+package:com.qualcomm.cabl
+package:com.miui.backup
+package:com.xiaomi.mirecycle
+package:com.miui.notification
+package:com.miui.micloudsync
+package:com.miui.daemon
+package:com.android.certinstaller
+package:com.android.carrierconfig
+package:com.google.android.marvin.talkback
+package:com.qti.qualcomm.datastatusnotification
+package:android
+package:com.android.contacts
+package:com.qualcomm.wfd.service
+package:com.miui.hybrid
+package:com.miui.vsimcore
+package:com.mi.webkit.core
+package:com.miui.securitycore
+package:com.android.egg
+package:com.android.mms
+package:com.android.mtp
+package:com.android.stk
+package:com.android.backupconfirm
+package:com.xiaomi.simactivate.service
+package:com.miui.player
+package:com.miui.miservice
+package:com.android.provision
+package:org.codeaurora.ims
+package:com.android.statementservice
+package:com.google.android.gm
+package:com.miui.sysopt
+package:com.miui.system
+package:com.google.android.apps.tachyon
+package:com.android.calendar
+package:com.miui.global.packageinstaller
+package:com.miui.translation.kingsoft
+package:com.miui.compass
+package:com.qualcomm.qti.auth.secureextauthservice
+package:com.google.android.setupwizard
+package:com.miui.rom
+package:com.qualcomm.qcrilmsgtunnel
+package:com.android.providers.settings
+package:com.android.sharedstoragebackup
+package:com.mediatek.batterywarning
+package:com.facebook.services
+package:com.xiaomi.location.fused
+package:com.google.android.music
+package:com.android.printspooler
+package:com.android.dreams.basic
+package:com.android.incallui
+package:com.fido.xiaomi.uafclient
+package:com.android.frameworks.telresources
+package:com.miui.bugreport
+package:com.android.inputdevices
+package:com.fido.asm
+package:com.qualcomm.qti.auth.securesampleauthservice
+package:com.qualcomm.qti.CdmaCallOptions
+package:com.qualcomm.qti.StatsPollManager
+package:com.qti.dpmserviceapp
+package:com.android.fileexplorer
+package:com.qti.xdivert
+package:com.google.android.apps.docs
+package:com.google.android.apps.maps
+package:com.miui.translation.youdao
+package:com.miui.cloudbackup
+package:com.android.cellbroadcastreceiver
+package:com.google.android.webview
+package:com.android.server.telecom
+package:com.google.android.syncadapters.contacts
+package:com.android.keychain
+package:com.android.camera
+package:com.android.chrome
+package:com.xiaomi.glgm
+package:com.xiaomi.upnp
+package:com.xiaomi.xmsf
+package:com.google.android.packageinstaller
+package:com.google.android.gms
+package:com.google.android.gsf
+package:com.google.android.tts
+package:com.android.calllogbackup
+package:com.miui.freeform
+package:com.google.android.partnersetup
+package:com.fingerprints.serviceext
+package:com.google.android.videos
+package:org.codeaurora.btmultisim
+package:com.xiaomi.mipicks
+package:com.dsi.ant.server
+package:com.xiaomi.finddevice
+package:com.android.proxyhandler
+package:com.xiaomi.joyose
+package:com.mi.android.globalFileexplorer
+package:com.miui.notes
+package:com.miui.wmsvc
+package:com.xiaomi.misettings
+package:com.google.android.feedback
+package:com.google.android.printservice.recommendation
+package:com.xiaomi.midrop
+package:com.google.android.apps.photos
+package:com.miui.translationservice
+package:com.google.android.syncadapters.calendar
+package:com.miui.cloudservice
+package:com.android.managedprovisioning
+package:com.miui.hybrid.accessory
+package:com.android.dreams.phototable
+package:com.miui.translation.xmcloud
+package:com.miui.touchassistant
+package:com.xiaomi.providers.appindex
+package:com.android.providers.partnerbookmarks
+package:com.google.android.gsf.login
+package:com.android.smspush
+package:com.mediatek.factorymode
+package:com.mi.android.globalminusscreen
+package:com.miui.calculator
+package:com.android.wallpaper.livepicker
+package:com.mi.AutoTest
+package:com.miui.cloudservice.sysbase
+package:com.miui.miwallpaper
+package:com.facebook.system
+package:com.xiaomi.bluetooth
+package:com.qualcomm.qti.telephony.vodafonepack
+package:com.google.android.backuptransport
+package:com.miui.cleanmaster
+package:com.android.storagemanager
+package:com.miui.analytics
+package:com.android.bookmarkprovider
+package:com.android.settings
+package:com.qualcomm.qti.ims
+package:com.miui.weather2
+package:com.quicinc.wbcserviceapp
+package:com.qualcomm.location
+package:com.xiaomi.scanner
+package:com.android.cts.ctsshim
+package:com.qualcomm.qti.tetherservice
+package:com.miui.yellowpage
+package:com.miui.antispam
+package:com.qualcomm.qti.services.secureui
+package:com.android.vpndialogs
+package:com.android.email
+package:com.wt.version_query
+package:com.android.phone
+package:com.android.shell
+package:com.android.wallpaperbackup
+package:com.android.providers.blockednumber
+package:com.android.providers.userdictionary
+package:com.android.emergency
+package:com.qualcomm.qti.RIDL
+package:com.android.location.fused
+package:com.android.deskclock
+package:com.android.systemui
+package:com.android.bluetoothmidiservice
+package:com.mi.globallayout
+package:com.facebook.appmanager
+package:com.xiaomi.discover
+package:com.mi.dlabs.vr
+package:com.miui.smsextra
+package:com.android.thememanager
+package:com.mipay.wallet.id
+package:com.mipay.wallet.in
+package:com.qualcomm.fastdormancy
+package:com.qualcomm.qti.auth.fidosuiservice
+package:com.miui.fmservice
+package:com.android.thememanager.module
+package:com.lbe.security.miui
+package:com.android.bluetooth
+package:com.qualcomm.timeservice
+package:com.qualcomm.embms
+package:com.android.providers.contacts
+package:com.stability.camerastability
+package:com.android.captiveportallogin
+package:com.miui.core
+package:com.miui.home
+package:com.google.android.inputmethod.latin
+package:com.miui.audioeffect
+santoni:/ $</code></pre>
+<h3 class="atx" id="uninstall-apps">Uninstall apps:</h3>
+<blockquote>
+<p>NOTE: Do not uninstall any system app or essential app. Always double-check the app's purpose before removing an app. Try <a href="https://play.google.com/store/apps/details?id=sk.styk.martin.apkanalyzer&amp;hl=en">this one</a> to know the APK names of the apps installed on your phone.</p>
+</blockquote>
+<p>Examples...</p>
+<p>Google Pay (Tez) uses the UPI Payment Gateway, and it serves my purpose. I don't feel the need for any similar apps. Let me show you how I uninstalled the 'Mi Pay' app.</p>
+<pre><code class="fenced-code-block">santoni:/ $ pm uninstall -k --user 0 com.mipay.wallet.in
+Success
+santoni:/ $ pm uninstall -k --user 0 com.mipay.wallet.id
+Success
+santoni:/ $</code></pre>
+<p>I also uninstalled the following apps. In some cases, I downloaded alternative apps, and in other cases, I don't see any reason for using some of the default apps. Privacy concerns had also been considered at the time of uninstalling some packages.</p>
+<p><em>Google Movies and TV:</em></p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.google.android.videos</code></pre>
+<p><em>Google Music:</em></p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.google.android.music</code></pre>
+<p><em>Android Mail Client:</em> The default Android Mail Client App. It doesn't integrate well with some email clients. On top of that, this modified version is issued by Xiaomi Corporation. The issuer country shown was not the country I live in.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.android.email</code></pre>
+<p><em>MIUI Video Player:</em> I'll show you how to download VLC from F-Droid's repository and install the same using the ADB shell.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.miui.videoplayer</code></pre>
+<p><em>MIUI Audio Player:</em> I'll go for VLC.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.miui.player</code></pre>
+<p><em>Android Notes:</em> A modified version of the Android Notes App, created by Xiaomi. The app can't export files to TXT format and doesn't open files with the TXT extension. Other text files with different extensions are unsupported as well. The app also has a tendency to sync notes to Xiaomi's cloud services. No thanks! I have so many decent note-taking/to-do management/code-editor apps.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.miui.notes</code></pre>
+<p><em>Google Photos:</em> Google imposed storage limitations on their Google Photos service in 2021. The app occupied a lot of space on my phone's internal memory. I'd rather use the web interface when needed.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.google.android.apps.photos</code></pre>
+<p><em>ShareMe - Xiaomi's File-Sharing app:</em> Nobody's interested in downloading that Xiaomi app to send files to other devices unless they own a Xiaomi device. Most people ask for turning on the BlueTooth, and I also noticed transferring files from USB drives is the fastest possible way to go. Wireless file sharing apps have a reputation of not being suckless. Carry a 16GB thumb drive with two USB-A to Phone OTG adapters if you're in dire need. If wireless file transfer is your best bet, you may try Goggle's 'Files' app as well.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.xiaomi.midrop</code></pre>
+<p><em>Xiaomi's Theme Manager:</em> I use a minimalist launcher. Themes and notifications are not my cups of tea, and they are seemingly distracting. People need to detoxify their digital life. Computers were designed to help us to be more productive, not to make us lazy and infuriate us with distracting notifications from social media, news, advertisements, and bundled resource hog sluggish bloatware applications, which in turn make us counterproductive. I'm not a fan of Eye-Popping Themes and a whole bunch of distracting notifications for diverting my attention to somewhere else.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.android.thememanager</code></pre>
+<p><em>Google Duo:</em> Who uses Google's Duo? I'll go for Jitsi.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.google.android.apps.tachyon</code></pre>
+<p><em>RedMi Calender:</em> Another critical, however, modified default app by Xiaomi. It syncs my data to overseas servers, their cloud services. I use a different calendar app.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.android.calendar</code></pre>
+<p><em>RedMi Gallery:</em> I have a better Gallery app.</p>
+<p>NOTE: After uninstalling the default Xiaomi Gallery app, I faced problems while grabbing screenshots. I had to re-install the gallery app. I'll show you how to re-install accidentally removed apps later.</p>
+<pre><code class="fenced-code-block">pm uninstall -k --user 0 com.miui.gallery</code></pre>
+<p>I uninstalled Wallpaper Carousel also.</p>
+<pre><code class="fenced-code-block">Success</code></pre>
+<p>When done:</p>
+<pre><code class="fenced-code-block">santoni:/ $ exit</code></pre>
+<p>Then,</p>
+<p>Type, <code>exit</code>.</p>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;exit</code></pre>
+<hr>
+<h1 class="atx" id="important">IMPORTANT:</h1>
+<h2 class="atx" id="if-you-have-unintentionally-uninstalled-an-app">If you have unintentionally uninstalled an app:</h2>
+<p>Ref:</p>
+<p><a href="https://forum.xda-developers.com/t/how-to-install-get-back-uninstalled-apps-apks-with-adb.3894235/">https://forum.xda-developers.com/t/how-to-install-get-back-uninstalled-apps-apks-with-adb.3894235/</a></p>
+<p><a href="https://forum.xda-developers.com/t/how-to-install-get-back-uninstalled-apps-apks-with-adb.3894235/page-4#post-84291287">https://forum.xda-developers.com/t/how-to-install-get-back-uninstalled-apps-apks-with-adb.3894235/page-4#post-84291287</a></p>
+<p>DuckDuckGo: adb shell Unknown command: install-existing</p>
+<pre><code class="fenced-code-block">O:\platform-tools_r32.0.0-windows\platform-tools&gt;adb shell
+santoni:/ $ pm enable --user 0 com.miui.gallery
+Package com.miui.gallery new state: enabled
+santoni:/ $ pm dump com.miui.gallery | grep path
+        path: /system/priv-app/MiuiGallery/MiuiGallery.apk
+santoni:/ $ pm install -r --user 0 /system/priv-app/MiuiGallery/MiuiGallery.apk
+Success
+santoni:/ $</code></pre>
+<h5 class="atx" id="one-by-one">One-by-one:</h5>
+<p>Run the ADB Shell from the Windows CMD.</p>
+<pre><code class="fenced-code-block">adb shell</code></pre>
+<p>In the ADB Shell, type...</p>
+<pre><code class="fenced-code-block">pm enable --user 0 com.miui.gallery</code></pre>
+<p>...to re-enable the removed package.</p>
+<p>Know the path to that app:</p>
+<pre><code class="fenced-code-block">pm dump com.miui.gallery | grep path</code></pre>
+<p>Copy the path to the clipboard ('Click-n-drag + Enter' on Windows).</p>
+<p>For example, <code>/system/priv-app/MiuiGallery/MiuiGallery.apk</code> or <code>/system/priv-app/FMRadio/FMRadio.apk</code>.</p>
+<p>Then, paste the copied path at the end of the following character string:</p>
+<pre><code class="fenced-code-block">pm install -r --user 0 </code></pre>
+<p>That is,</p>
+<pre><code class="fenced-code-block">pm install -r --user 0 /system/priv-app/MiuiGallery/MiuiGallery.apk</code></pre>
+<p>Also notice that the command <code>adb shell cmd package install-existing com.miui.gallery</code> will return an error: <code>Unknown command: install-existing</code></p>
+<p>Therefore, it's best to stick to <code>pm install -r --user 0 /system/priv-app/APK_with_PATH</code>.</p>
+<hr>
+<h2 class="atx" id="part-7">Part 7:</h2>
+<p>Time to install a few more apps. Test what you've learned.</p>
+<pre><code class="fenced-code-block">adb install "C:\Users\YourUserName\Downloads\F-Droid.apk"
+adb install "C:\Users\YourUserName\Downloads\com.mkulesh.micromath.plus_319.apk"
+adb install "C:\Users\YourUserName\Downloads\com.blacksquircle.ui_10007.apk"
+adb install "C:\Users\YourUserName\Downloads\org.videolan.vlc_13040307.apk"
+adb install "C:\Users\YourUserName\Downloads\org.koreader.launcher.fdroid_8849.apk"
+adb install "C:\Users\YourUserName\Downloads\com.concept1tech.instalate_13.apk"
+adb install "C:\Users\YourUserName\Downloads\com.foobnix.pro.pdf.reader_4334.apk"</code></pre>
+<p>KoReader is not available in Google Play. It's possibly the best all-rounder eBook reader out there on the android market. It takes a few hours to get accustomed to using the reader. Nevertheless, you'll get all the bells &amp; whistles to manipulate eBooks on a tiny phone display. When you get everything to handle every facet of document files, you'll read much more comfortably on your phone, even if your phone has a relatively smaller display, like 4.7" or 5".</p>
+<p>KoReader was designed for eReaders. The interface looks very different from the more traditional android applications' approach to the material design UI because their main focus is creating the best possible eBook reader app for eReader devices. It comes with an integrated dictionary. Stardict dictionary files can be added to extend the dictionary database further. External dictionary applications like GoldenDict can also be accessed. Pan and pinch zoom is not available, though. Instead, it has a different approach to zoom documents. It takes time to get used to with KoReader, but in the end, no other eBook Reader app feels even remotely close to this eBook reader application.</p>
+<p>Librera PRO is another excellent eBook Reader for Android. It supports external dictionary applications, even WordWeb. Documents can be pinch zoomed and panned.</p>
+<p>Cool Reader is also a good eBook Reader. It doesn't support static documents (PDF, DJVU etc.) which is a downside. External dictionary applications like GoldenDict are supported. Pan and pinch zoom is unavailable since EPUB, CHM, TXT, MOBI files are 'Reflowable Documents'. The text part in reflowable documents adapts to the screen properties. Images are scaled. Thus, ebooks in those formats are resized according to the screen size and resolution. However, Cool Reader allows users to change the font size.</p>
+<hr>
+<hr>
+<h2 class="atx" id="part-8">Part 8:</h2>
+<h3 class="atx" id="disable-usb-debugging-and-developer-mode">Disable USB Debugging and Developer Mode:</h3>
+<ol>
+<li>Uncheck the following options:</li>
+</ol>
+<ul>
+<li><p>Install via USB.</p>
+</li>
+<li><p>USB Debugging.</p>
+</li>
+</ul>
+<ol start="2">
+<li>Revoke USB Debugging Authorisations.</li>
+</ol>
+<p><img alt="ADB-devel-0007" src="attachments/ADB-devel-0007.jpg"></p>
+<p>Press OK on the phone when prompted.</p>
+<ol start="3">
+<li>Disable Developer Options.</li>
+</ol>
+<p><strong>Long Tap</strong> on the <strong>Settings</strong> app -&gt; <strong>App Info</strong> -&gt; <strong>Force Stop</strong> &amp; <strong>Clear All Data</strong>.</p>
+<p><img alt="ADB-devel-0008" src="attachments/ADB-devel-0008.jpg"></p>
+<p><img alt="ADB-devel-0009" src="attachments/ADB-devel-0009.jpg"></p>
+<p><em>Repeat</em> it.</p>
+<p>Go to the 'App Info' section of the required app (e.g., F-Droid) and allow network and storage permissions.</p>
+<p>Reboot your PC and delete the folder 'platform-tools_rxx.x.x-windows' if you do not plan to use the ADB shell again.</p>
+<h2 class="atx" id="part-9">Part 9:</h2>
+<h3 class="atx" id="how-will-you-update-the-apps-you-installed-using-the-adb-shell">How will you update the apps you installed using the ADB Shell?</h3>
+<h4 class="atx" id="one-for-general-users">ONE: For general users:</h4>
+<p>Check the option 'Unknown Sources', 'Allow Installation of apps from unknown sources. Now you're ready to update apps from F-Droid, as you update from Google Play Store. If, for any reason, you cannot update apps directly from the phone, try the ADB Shell again. Update the apps as you'd install apps using the same commands.</p>
+<p>For example:</p>
+<pre><code class="fenced-code-block">adb install "C:\Users\YourUserName\Downloads\org.koreader.launcher.fdroid_8849.apk"</code></pre>
+<p>Adding the <code>-r</code> option at the start will reinstall the app. I strongly advise you against doing so because if you reinstall an app, you're most likely going to lose its configuration files and settings.</p>
+<p>In case you don't want to update apps from your PC, you can try updating the apps from F-Droid after turning on the option 'Unknown Sources'. It's much comfier to update apps from the phone.</p>
+<h4 class="atx" id="two-for-account-holders-of-googleand39s-advanced-protection-program">TWO: For account holders of Google's Advanced Protection Program:</h4>
+<p>Turning on the option 'Unknown Sources' won't have any effect here.</p>
+<p>The ADB Shell is always your best friend. Use the ADB Shell and update the apps from your PC's terminal.</p>
+<hr>
+<p>===</p>
+<p>Link to this document's repository: <a href="https://github.com/Pinaki82/adb-shell-android-bloatware-removal.git">https://github.com/Pinaki82/adb-shell-android-bloatware-removal.git</a></p>
+<p>You may wish to download the PDF or the EPUB version from the release section.</p>
+<p>Recommended EPUB Viewer on Android (for smaller files) is <a href="https://play.google.com/store/apps/details?id=org.coolreader&amp;hl=en">Cool Reader</a>. On the PC, try <a href="https://okular.kde.org/">Okular</a>. It's a multiplatform, multiformat document viewer by <a href="https://kde.org/">KDE</a>. Okular can open EPUB files. Windows and Linux both are covered.</p>
+<p>To create the EPUB, I used <a href="https://sigil-ebook.com/">Sigil</a>.</p>
+<p>The <em>README.md</em> file, which is the main file to this guide, has been created with <a href="https://marktext.app/">Mark Text</a>. Also, the PDF version of the document was exported from <a href="https://marktext.app/">Mark Text</a>. Download <strong>Mark Text</strong> from <a href="https://github.com/marktext/marktext">here</a>. You can download the HTML version, but without an active internet connection, you won't see the screenshots.</p>
+<p>===</p>
+</article>
+</body>
+</html>
