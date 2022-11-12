@@ -562,7 +562,7 @@ I uninstalled Wallpaper Carousel also.
 Success
 ```
 
-Get a list of all applications installed by you [[Ref](https://stackoverflow.com/questions/53634246/android-get-all-installed-packages-using-adb)]:
+### Get a list of all applications installed by you [[Ref](https://stackoverflow.com/questions/53634246/android-get-all-installed-packages-using-adb)]:
 
 ```
 adb shell cmd package list packages -3
