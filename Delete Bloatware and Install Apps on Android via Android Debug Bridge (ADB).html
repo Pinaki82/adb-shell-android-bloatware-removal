@@ -1310,14 +1310,14 @@ pre[class*="language-"] {
 <p>Ref: <a href="https://www.getdroidtips.com/enable-option-usb-debugging-redmi-4-4x/">https://www.getdroidtips.com/enable-option-usb-debugging-redmi-4-4x/</a></p>
 <p>Google: toggle developer mode redmi 4</p>
 <p><strong>NOTE:</strong> Connect your device to the internet. Otherwise, Xiaomi Corporation Inc. won't let you turn on USB Debugging.</p>
-<p><img alt="ADB-devel-0001" src="attachments/ADB-devel-0001.jpg"></p>
+<p><img alt="ADB-devel-0001" src="https://user-images.githubusercontent.com/16861933/153182956-93326aa7-108a-49c9-8f84-1ee0f00548ce.jpg"></p>
 <p>Turn on USB Debugging from the Developer Options.</p>
 <p><strong>Settings App</strong> -&gt; <strong>System Settings</strong> -&gt; <strong>Additional Settings</strong> -&gt; <strong>Developer Options</strong> -&gt; <strong>DEBUGGING</strong> -&gt; <strong>USB Debugging</strong>, <strong>Install via USB</strong>, &amp; <strong>Verify apps installed over the USB</strong>.</p>
-<p><img alt="ADB-devel-0002" src="attachments/ADB-devel-0002.jpg"></p>
-<p><img alt="ADB-devel-0003" src="attachments/ADB-devel-0003.jpg"></p>
-<p><img alt="ADB-devel-0004" src="attachments/ADB-devel-0004.jpg"></p>
-<p><img alt="ADB-devel-0005" src="attachments/ADB-devel-0005.jpg"></p>
-<p><img alt="ADB-devel-0006" src="attachments/ADB-devel-0006.jpg"></p>
+<p><img alt="ADB-devel-0002" src="https://user-images.githubusercontent.com/16861933/153183217-f282a105-1aa4-40b1-a96d-ececa0a6fd49.jpg"></p>
+<p><img alt="ADB-devel-0003" src="https://user-images.githubusercontent.com/16861933/153183308-e605979d-5f37-45cd-a9d9-4c1290ac053d.jpg"></p>
+<p><img alt="ADB-devel-0004" src="https://user-images.githubusercontent.com/16861933/153183370-537ec2f5-77a4-42d1-a77a-9c61721c35bb.jpg"></p>
+<p><img alt="ADB-devel-0005" src="https://user-images.githubusercontent.com/16861933/153183421-11e04519-8e2e-43d1-ade0-3ab4b553a8a6.jpg"></p>
+<p><img alt="ADB-devel-0006" src="https://user-images.githubusercontent.com/16861933/153183488-4fda7c93-861e-4a26-b6de-3c5143f5e413.jpg"></p>
 <h2 class="atx" id="part-3">Part 3:</h2>
 <p>PC Side:</p>
 <p>Right-click inside the extracted folder 'platform-tools_rxx.x.x-windows\platform-tools' and choose to open a command prompt window there.</p>
@@ -1371,6 +1371,10 @@ Success</code></pre>
 <h2 class="atx" id="app-uninstallation">App Uninstallation:</h2>
 <pre><code class="fenced-code-block">adb shell</code></pre>
 <p>Know the packages installed on your phone.</p>
+<pre><code class="fenced-code-block">adb shell cmd package list packages -s</code></pre>
+<p>Take a backup:</p>
+<pre><code class="fenced-code-block">adb shell cmd package list packages -s &gt; "%USERPROFILE%\Documents\SystemApps.txt"</code></pre>
+<p>For older versions of Android:</p>
 <pre><code class="fenced-code-block">pm list packages -s</code></pre>
 <p>Here's the output I received.</p>
 <p>Depending on the phone and the apps installed on your phone, you may see something else. I try new applications and sometimes uninstall apps I don't need. So, the list may grow or shrink in the future. That's not something to be considered permanent. However, the output below will give us an overview of what it looks like from the ADB Shell.</p>
@@ -1637,6 +1641,10 @@ santoni:/ $</code></pre>
 <pre><code class="fenced-code-block">pm uninstall -k --user 0 com.miui.gallery</code></pre>
 <p>I uninstalled Wallpaper Carousel also.</p>
 <pre><code class="fenced-code-block">Success</code></pre>
+<p>Get a list of all applications installed by you [<a href="https://stackoverflow.com/questions/53634246/android-get-all-installed-packages-using-adb">Ref</a>]:</p>
+<pre><code class="fenced-code-block">adb shell cmd package list packages -3</code></pre>
+<p>Save the result to a text file if needed:</p>
+<pre><code class="fenced-code-block">adb shell cmd package list packages -3 &gt; "%USERPROFILE%\Documents\UserInstalledApps.txt"</code></pre>
 <p>When done:</p>
 <pre><code class="fenced-code-block">santoni:/ $ exit</code></pre>
 <p>Then,</p>
@@ -1703,14 +1711,14 @@ adb install "C:\Users\YourUserName\Downloads\com.foobnix.pro.pdf.reader_4334.apk
 <ol start="2">
 <li>Revoke USB Debugging Authorisations.</li>
 </ol>
-<p><img alt="ADB-devel-0007" src="attachments/ADB-devel-0007.jpg"></p>
+<p><img alt="ADB-devel-0007" src="https://user-images.githubusercontent.com/16861933/153183665-06cf668c-b301-4a1c-b3e1-b33cc67461d0.jpg"></p>
 <p>Press OK on the phone when prompted.</p>
 <ol start="3">
 <li>Disable Developer Options.</li>
 </ol>
 <p><strong>Long Tap</strong> on the <strong>Settings</strong> app -&gt; <strong>App Info</strong> -&gt; <strong>Force Stop</strong> &amp; <strong>Clear All Data</strong>.</p>
-<p><img alt="ADB-devel-0008" src="attachments/ADB-devel-0008.jpg"></p>
-<p><img alt="ADB-devel-0009" src="attachments/ADB-devel-0009.jpg"></p>
+<p><img alt="ADB-devel-0008" src="https://user-images.githubusercontent.com/16861933/153183730-025d6d7b-c470-419d-8265-b16c186ca5c7.jpg"></p>
+<p><img alt="ADB-devel-0009" src="https://user-images.githubusercontent.com/16861933/153183762-2808126d-0671-4c4d-8bcf-af62fd74a2c7.jpg"></p>
 <p><em>Repeat</em> it.</p>
 <p>Go to the 'App Info' section of the required app (e.g., F-Droid) and allow network and storage permissions.</p>
 <p>Reboot your PC and delete the folder 'platform-tools_rxx.x.x-windows' if you do not plan to use the ADB shell again.</p>
