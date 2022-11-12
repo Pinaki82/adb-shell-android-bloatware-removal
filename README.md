@@ -218,6 +218,18 @@ adb shell
 Know the packages installed on your phone.
 
 ```
+adb shell cmd package list packages -s
+```
+
+Take a backup:
+
+```
+adb shell cmd package list packages -s > "%USERPROFILE%\Documents\SystemApps.txt"
+```
+
+For older versions of Android:
+
+```
 pm list packages -s
 ```
 
@@ -548,6 +560,18 @@ I uninstalled Wallpaper Carousel also.
 
 ```
 Success
+```
+
+Get a list of all applications installed by you [[Ref](https://stackoverflow.com/questions/53634246/android-get-all-installed-packages-using-adb)]:
+
+```
+adb shell cmd package list packages -3
+```
+
+Save the result to a text file if needed:
+
+```
+adb shell cmd package list packages -3 > "%USERPROFILE%\Documents\UserInstalledApps.txt"
 ```
 
 When done:
