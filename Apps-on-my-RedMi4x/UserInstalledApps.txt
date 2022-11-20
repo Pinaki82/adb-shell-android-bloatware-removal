@@ -4,6 +4,7 @@ package:org.koreader.launcher.fdroid
 package:de.tutao.tutanota
 package:kr.sira.luxmeter
 package:com.ghostsq.commander
+package:org.proninyaroslav.libretorrent
 package:com.truecaller
 package:cn.wps.xiaomi.abroad.lite
 package:com.rachittechnology.lawapp
@@ -24,6 +25,7 @@ package:org.geogebra.android.g3d
 package:com.quicosoft.exposurecalculator.app
 package:com.cyber_genius.cyber_tor
 package:ch.protonmail.android
+package:org.purplei2p.i2pd
 package:org.sufficientlysecure.keychain
 package:com.gazlaws.codeboard
 package:com.microappvalley.unauthorizedapp
@@ -99,10 +101,12 @@ package:org.torproject.torbrowser
 package:com.ghostsq.commander.box
 package:com.ghostsq.commander.dbx
 package:it.android.demi.elettronica.pro
+package:pan.alexander.tordnscrypt.stable
 package:org.videolan.vlc
 package:com.wtmp.svdsoftware
 package:com.zmarties.detective
 package:com.google.android.calendar
+package:com.spotify.music
 package:com.x8bit.bitwarden
 package:com.ubercab
 package:org.tasks
@@ -118,6 +122,7 @@ package:com.nounplus.grammarcheckerenglish2
 package:com.malmath.apps.mm
 package:com.mhdev.resistorscanner
 package:com.sbi.SBIFreedomPlus
+package:org.mozilla.firefox
 package:com.llamacorp.equate
 package:com.gingersoftware.android.page
 package:com.cloudflare.onedotonedotonedotone
