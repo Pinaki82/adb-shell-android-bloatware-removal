@@ -1292,7 +1292,11 @@ pre[class*="language-"] {
 ; https://docs.microsoft.com/en-us/previous-versions/windows/embedded/gg469889(v=winembedded.80)?redirectedfrom=MSDN
 
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open CMD Here\command]
-@="C:\\Windows\\system32\\cmd.exe"</code></pre>
+@="C:\\Windows\\system32\\cmd.exe"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open CMD Here]
+@="Open CMD Here"
+"Icon"="%WINDIR%\\system32\\cmd.exe"</code></pre>
 <h4 class="atx" id="-ubuntu">*-Ubuntu:</h4>
 <pre><code class="fenced-code-block">sudo apt install android-tools-adb</code></pre>
 <p>The two core aspects of installing/uninstalling apps from the ADB shell:</p>

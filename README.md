@@ -69,7 +69,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open CMD Here]
 @="Open CMD Here"
 "Icon"="%WINDIR%\\system32\\cmd.exe"
-
 ```
 
 #### *-Ubuntu:
